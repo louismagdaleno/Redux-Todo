@@ -45,3 +45,14 @@ class Title extends React.Component {
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        title: state.title.title
+    };
+};
+
+export default connect(
+    mapStateToProps,
+    { updateTitle }
+)(Title);
