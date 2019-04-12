@@ -29,4 +29,4 @@ export const todosReducer = (state = initialState, action) => {
         default:
             return state;
     }
-}
+};
