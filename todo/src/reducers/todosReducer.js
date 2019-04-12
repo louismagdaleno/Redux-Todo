@@ -23,7 +23,7 @@ export const todosReducer = (state = initialState, action) => {
         case TOGGLE_TODO:
             return {
                 ...state,
-                todos: state.todos.map((todo,index) =? 
+                todos: state.todos.map((todo,index) => 
                 action.payload === index ? {...todo, completed: !todo.completed } : todo)
             };
         default:
